@@ -1,60 +1,60 @@
 {
-  "name": "awesomename",
-  "version": "0.0.0",
-  "license": "MIT",
-  "type": "module",
-  "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "dev": " vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "playwright test",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --cache --plugin-search-dir . --check . && eslint . && stylelint '**/*.{css,postcss,svelte}'",
-    "format": "prettier --cache --plugin-search-dir . --write .; stylelint --fix '**/*.{css,postcss,svelte}'; eslint --fix"
+  name: 'awesomename',
+  version: '0.0.0',
+  license: 'MIT',
+  type: 'module',
+  scripts: {
+    preinstall: 'npx only-allow pnpm',
+    dev: ' vite dev',
+    build: 'vite build',
+    preview: 'vite preview',
+    test: 'playwright test',
+    check: 'svelte-kit sync && svelte-check --tsconfig ./tsconfig.json',
+    'check:watch': 'svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch',
+    lint: "prettier --cache --plugin-search-dir . --check . && eslint . && stylelint '**/*.{css,postcss,svelte}'",
+    format: "prettier --cache --plugin-search-dir . --write .; stylelint --fix '**/*.{css,postcss,svelte}'; eslint --fix",
   },
-  "devDependencies": {
-    "@sveltejs/adapter-auto": "^2.0.0",
-    "@sveltejs/kit": "^1.11.0",
-    "svelte": "^3.56.0",
-    "svelte-check": "^3.1.2",
-     "eslint-plugin-svelte3": "^4.0.0",
-    "@types/node": "^18.15.0",
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.54.1",
-    "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.7.0",
-    "prettier-plugin-svelte": "^2.9.0",
-   
-    "postcss": "^8.4.21",
-    "postcss-html": "^1.5.0",
-    "postcss-jit-props": "^1.0.12",
-    "postcss-load-config": "^4.0.1",
-    "postcss-mixins": "^9.0.4",
-    "postcss-preset-env": "^8.0.1",
-    "prettier": "^2.8.4",
-    
-    "stylelint": "^15.2.0",
-    "stylelint-config-html": "^1.1.0",
-    "stylelint-config-idiomatic-order": "^9.0.0",
-    "stylelint-config-recommended": "^10.0.1",
-    "stylelint-config-standard": "^30.0.1",
-    "stylelint-high-performance-animation": "^1.8.0",
-    
-    "tslib": "^2.5.0",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.4",
-    "vite-plugin-dts": "^2.1.0",
-    "vite-plugin-stylelint": "^4.3.0"
+  devDependencies: {
+    '@sveltejs/adapter-auto': '^2.0.0',
+    '@sveltejs/kit': '^1.11.0',
+    svelte: '^3.56.0',
+    'svelte-check': '^3.1.2',
+    'eslint-plugin-svelte3': '^4.0.0',
+
+    vite: '^4.1.4',
+    'vite-plugin-stylelint': '^4.3.0',
+
+    tslib: '^2.5.0',
+    typescript: '^4.9.5',
+
+    '@typescript-eslint/eslint-plugin': '^5.54.1',
+    '@typescript-eslint/parser': '^5.54.1',
+    eslint: '^8.36.0',
+    'eslint-config-prettier': '^8.7.0',
+    'prettier-plugin-svelte': '^2.9.0',
+
+    postcss: '^8.4.21',
+    'postcss-html': '^1.5.0',
+    'postcss-jit-props': '^1.0.12',
+    'postcss-load-config': '^4.0.1',
+    'postcss-mixins': '^9.0.4',
+    'postcss-preset-env': '^8.0.1',
+    prettier: '^2.8.4',
+
+    stylelint: '^15.2.0',
+    'stylelint-config-html': '^1.1.0',
+    'stylelint-config-idiomatic-order': '^9.0.0',
+    'stylelint-config-recommended': '^10.0.1',
+    'stylelint-config-standard': '^30.0.1',
+    'stylelint-high-performance-animation': '^1.8.0',
   },
-  "dependencies": {
-    "modern-normalize": "^1.1.0",
-    "open-props": "^1.5.6"
+  dependencies: {
+    'modern-normalize': '^1.1.0',
+    'open-props': '^1.5.6',
   },
-  "pnpm": {
-    "patchedDependencies": {
-      "stylelint-config-idiomatic-order@9.0.0": "patches/stylelint-config-idiomatic-order@9.0.0.patch"
-    }
-  }
+  pnpm: {
+    patchedDependencies: {
+      'stylelint-config-idiomatic-order@9.0.0': 'patches/stylelint-config-idiomatic-order@9.0.0.patch',
+    },
+  },
 }
