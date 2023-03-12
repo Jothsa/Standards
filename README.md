@@ -1,0 +1,1 @@
+This is a collection of useful files and guidelines I've created for myself.

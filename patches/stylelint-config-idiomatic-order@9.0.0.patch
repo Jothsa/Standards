@@ -1,0 +1,17 @@
+diff --git a/package.json b/package.json
+index 12234547519a7f4f70d36959815451bc3b630cca..7fae5e5c163ba9fa78874bcceaea93bfecbfac79 100644
+--- a/package.json
++++ b/package.json
+@@ -11,10 +11,10 @@
+   },
+   "devDependencies": {
+     "standard": "^17.0.0",
+-    "stylelint": "^14.12.1"
++    "stylelint": "^15.2.0"
+   },
+   "peerDependencies": {
+-    "stylelint": ">=11"
++    "stylelint": "^15.2.0"
+   },
+   "scripts": {
+     "lint": "standard --fix index.js test/*.js",

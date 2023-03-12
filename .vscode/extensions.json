@@ -1,0 +1,31 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "codespaces-contrib.codeswing",
+    "mikestead.dotenv",
+    "usernamehw.errorlens",
+    "dbaeumer.vscode-eslint",
+    "bierner.github-markdown-preview",
+    "ecmel.vscode-html-css",
+    "wix.vscode-import-cost",
+    "eamodio.gitlens",
+    "equinusocio.vsc-material-theme-icons",
+    "idered.npm",
+    "christian-kohler.npm-intellisense",
+    "IBM.output-colorizer",
+    "christian-kohler.path-intellisense",
+    "GitHub.vscode-pull-request-github",
+    "csstools.postcss",
+    "esbenp.prettier-vscode",
+    "alefragnani.project-manager",
+    "stylelint.vscode-stylelint",
+    "svelte.svelte-vscode",
+    "ardenivanov.svelte-intellisense",
+    "fivethree.vscode-svelte-snippets",
+    "redhat.vscode-yaml",
+    "vscode-icons-team.vscode-icons",
+    "hnw.vscode-auto-open-markdown-preview",
+    "katjanakosic.vscode-json5"
+  ]
+}
