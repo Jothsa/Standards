@@ -2,7 +2,6 @@
   "recommendations": [
     "aaron-bond.better-comments",
     "alefragnani.project-manager",
-    "ardenivanov.svelte-intellisense",
     "bierner.github-markdown-preview",
     "christian-kohler.npm-intellisense",
     "christian-kohler.path-intellisense",

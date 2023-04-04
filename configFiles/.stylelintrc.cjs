@@ -1,3 +1,32 @@
+const openPropsCustomMedia = [
+  '/^--(xxs|xs|sm|md|lg|xl|xxl)-(only|n-above|n-below)$/',
+  '/^--(xxs|xs|sm|md|lg)-phone$/',
+  '--portrait',
+  '--landscape',
+  '--md-only',
+  '--md-n-above',
+  '--md-n-below',
+  '--md-phone',
+  '--xxl-only',
+  '-xxl-n-above',
+  '--xxl-n-below',
+  '--touch',
+  '--stylus',
+  '--pointer',
+  '--mouse',
+  '--HDcolor',
+  '--OSdark',
+  '--OSlight',
+  '--motionOK',
+  '--motionNotOK',
+  '--highContrast',
+  '--lowContrast',
+  '--opacityOK',
+  '--opacityNotOK',
+  '--useDataOK',
+  '--useDataNotOK',
+];
+
 module.exports = {
   extends: [
     'stylelint-config-html',
@@ -66,8 +95,11 @@ module.exports = {
       },
     ],
 
+    //* allow beginning underscore eg --_bg, but otherwise kebab case
+    // * also allow extra - in middle for neg
     'custom-property-pattern': [
-      '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+      '^(_?)([a-z][a-z0-9]*)(-{1,2}[a-z0-9]+)*$',
+      ...openPropsCustomMedia,
       {
         message: 'Expected custom property name to be kebab-case',
       },
@@ -79,8 +111,14 @@ module.exports = {
         ignore: ['after-comment', 'inside-single-line-block'],
       },
     ],
-    'selector-id-pattern': '^[a-z][a-zA-Z0-9]+$',
-    'selector-class-pattern': '^[a-z][a-zA-Z0-9]+$',
-    'keyframes-name-pattern': '^[a-z][a-zA-Z0-9]+$',
+    'selector-id-pattern': '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+    'selector-class-pattern': '^([a-z][a-z0-9]*)(-[a-z0-9]+)|(astro)*$',
+    'keyframes-name-pattern': '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+    'media-feature-name-no-unknown': [
+      true,
+      {
+        ignoreMediaFeatureNames: [...openPropsCustomMedia],
+      },
+    ],
   },
 };
