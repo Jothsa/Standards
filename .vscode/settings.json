@@ -1,7 +1,10 @@
 {
   "cssvar.files": [
-    "./node_modules/open-props/open-props.min.css"
-    // "./src/app.postcss"
+    // "node_modules/open-props/open-props.min.css",
+    // "node_modules/open-props/color-oklch.min.css",
+    // "node_modules/open-props/oklch-hues.min.css",
+    // "node_modules/open-props/gray-oklch.min.css"
+    // "./src/styles/props.postcss"
     // if you have an alternative path to where your styles are located
     // you can add it in this array of files
     // "assets/styles/variables.css"
@@ -24,9 +27,20 @@
     "astro"
   ],
 
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro", // Enable .astro
+    "typescript", // Enable .ts
+    "typescriptreact" // Enable .tsx
+  ],
+
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
+  "[astro]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "prettier.documentSelectors": ["**/*.astro"],
 
   "editor.codeActionsOnSave": {
     "source.fixAll": true
