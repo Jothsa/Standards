@@ -19,13 +19,8 @@
   // "typescript.suggest.paths": false,
   // "javascript.suggest.paths": false
 
-  "stylelint.validate": [
-    // ↓ Add "html" language.
-    "html",
-    // ↓ Add "svelte" language.
-    "svelte",
-    "astro"
-  ],
+  "stylelint.snippet": ["html", "svelte", "astro", "postcss", "css"],
+  "stylelint.validate": ["html", "svelte", "astro", "postcss", "css"],
 
   "eslint.validate": [
     "javascript",
