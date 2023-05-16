@@ -31,7 +31,7 @@ module.exports = {
   extends: [
     'stylelint-config-html',
     'stylelint-config-recommended',
-    'stylelint-config-idiomatic-order',
+    '@jothsa/stylelint-config-idiomatic-order',
   ],
   plugins: ['stylelint-high-performance-animation'],
   rules: {
